@@ -42,6 +42,7 @@ for k in range(10):
     loss.backward()
     for p in n.parameters():
         p.data -= 0.01 * p.grad  # Simple gradient descent
+```
 
 ### Acknowledgements
 Thanks to Andrej Karpathy for his incredible micrograd tutorial, which served as the foundation for this project. 
